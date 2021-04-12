@@ -1,0 +1,13 @@
+.tabs
+    &__nav
+        cursor: pointer
+    &__content
+        height: 0   
+        opacity: 0
+        z-index: -1
+        overflow: hidden
+        &.is-active
+            height: auto
+            z-index: 1
+            opacity: 1
+            transition: all .3s

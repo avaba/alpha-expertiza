@@ -1,0 +1,122 @@
+.label
+    margin-bottom: 15px
+    display: block
+    &-radio
+        &__input
+            display: none
+            &:checked + .label-radio__label
+                border-color: #4d5c76
+                color: #4d5c76
+                transition: all .2s
+                &::before
+                    border-color: #4d5c76
+                    background-color: #4d5c76
+                    transition: all .2s
+                &::after
+                    opacity: 1
+                    transition: all .2s
+        &__label
+            position: relative
+            border: 2px solid #e7e7e7
+            display: block
+            border-radius: 10px
+            padding: 15px 15px 15px 60px
+            cursor: pointer
+            font-size: 20px
+            font-weight: 500
+            color: #494949
+            transition: all .2s
+            &::before
+                content: ''
+                position: absolute
+                left: 15px
+                top: 13px
+                width: 30px
+                height: 30px
+                border: 2px solid #e7e7e7
+                border-radius: 100%
+                transition: all .2s
+            &::after
+                content: ''
+                opacity: 0
+                position: absolute
+                left: 15px
+                top: 13px
+                width: 30px
+                height: 30px
+                border: 2px solid rgba(77, 92, 118, 0)
+                background-image: url(/images/src/check.svg)
+                background-repeat: no-repeat
+                background-position: 50%
+                transition: all .2s
+    &-input
+        display: block
+        width: 100%
+        input
+            display: block
+            width: 100%
+            padding: 15px
+            border: 2px solid #e7e7e7
+            border-radius: 10px
+            font-size: 20px
+
+.submit 
+    display: block
+    background: $accent
+    color: $white                
+    border: 0
+    min-height: 60px
+    border-radius: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    text-align: center
+    opacity: 1
+    transition: all .3s
+    font-size: 15px
+    text-transform: uppercase
+    font-weight: 500
+    &:hover
+        opacity: .8
+        transition: all .3s
+
+.polit
+    margin: 0
+    font-size: 14px
+    color: #9a9a9a
+    a 
+        color: #9a9a9a
+        text-decoration: underline
+        &:hover
+            text-decoration: none
+
+.btn
+    display: block
+    text-align: center
+    &-white
+        border: 2px solid #aab5c9 
+        border-radius: 100px 
+        color: #262f40
+        padding: 20px 15px      
+        font-weight: 500 
+        &:hover
+            color: #262f40
+    &-arrow
+        display: flex
+        align-items: center
+        justify-content: center
+        &::after
+            content: ''
+            position: relative
+            display: inline-block
+            background-image: url(/images/src/slide-next.svg)
+            width: 24px
+            height: 12px
+            margin-left: 10px
+            right: 0
+            transition: all .3s 
+        &:hover
+            &::after
+                right: -5px
+                transition: all .3s    

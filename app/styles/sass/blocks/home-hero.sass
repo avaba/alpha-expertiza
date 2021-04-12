@@ -1,0 +1,115 @@
+.home-hero
+    height: 800px
+    background-image: #fff
+    padding-top: 140px
+    padding-bottom: 155px
+    color: $white
+    display: flex
+    align-items: center
+    position: relative
+    overflow: hidden
+    max-width: 1920px
+    margin: 0 auto
+    &__bg
+        position: absolute
+        top: 0
+        bottom: 0px
+        width: auto
+        height: 1100px
+    &__title
+        margin: 50px -15px 60px -15px
+        h1
+            font-size: 40px
+            font-weight: 300
+            margin: 0
+            strong
+                font-weight: 600
+    .advantages
+        background: $white
+        border-radius: 10px
+        text-align: center
+        color: $textcolor
+        display: flex
+        margin-right: -15px
+        position: relative
+        z-index: 30
+        &__item
+            padding: 20px 15px
+            position: relative
+            flex: 1
+            flex-direction: column
+            &::before
+                content: ''
+                position: absolute
+                right: 0px
+                height: 70%
+                width: 1px
+                top: 50%
+                transform: translateY(-50%)
+                background: rgba(77, 92, 118, 0.1)
+            &:last-child
+                &::before
+                    display: none  
+            &-img
+                height: 60px
+            &-title
+                font-size: 16px
+                margin-top: 15px
+                margin-bottom: 12px
+            &-text
+                font-size: 13px
+                margin: 0
+        &__info
+            margin-left: auto
+            position: absolute
+            right: 5px
+            bottom: 5px
+            &-icon
+                cursor: pointer
+                position: relative
+                z-index: 1
+                &.is-active
+                    svg path.shape-svg
+                        fill: #262e3f
+                &:hover
+                    svg path.shape-svg
+                        fill: #262e3f
+            &-text
+                opacity: 0
+                pointer-events: none
+                position: absolute
+                background: $white
+                top: 100%
+                margin: 0
+                margin-top: 10px
+                left: 50%
+                margin-left: -250px
+                width: 500px
+                padding: 30px
+                font-size: 14px
+                border-radius: 10px
+                animation-duration: 0.3s;
+                box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1)
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: 50%
+                    transform: translateX(-50%)
+                    border: 10px solid transparent
+                    border-bottom: 10px solid $white
+                    margin-top: -20px
+                &.show
+                    opacity: 1
+                    pointer-events: auto
+    &__dir
+        position: absolute
+        left: 50%
+        margin-left: 210px
+        bottom: 0px
+    .name-block
+        margin-left: 65px
+
+                
+
+    
