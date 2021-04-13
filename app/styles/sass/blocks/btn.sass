@@ -1,0 +1,41 @@
+.btn
+    display: block
+    text-align: center
+    width: 100%
+    &-default
+        background: $accent
+        color: $white
+        padding: 20px 15px 
+        border-radius: 5px 
+        text-transform: uppercase
+        border: 0
+        &:hover
+            opacity: .9
+            color: $white
+    &-white
+        border: 2px solid #aab5c9 
+        border-radius: 100px 
+        color: #262f40
+        padding: 20px 15px      
+        font-weight: 500 
+        &:hover
+            color: #262f40
+    &-arrow
+        display: flex
+        align-items: center
+        justify-content: center
+        &::after
+            content: ''
+            position: relative
+            display: inline-block
+            background-image: url(/images/src/slide-next.svg)
+            background-repeat: no-repeat
+            width: 24px
+            height: 12px
+            margin-left: 10px
+            right: 0
+            transition: all .3s 
+        &:hover
+            &::after
+                right: -5px
+                transition: all .3s

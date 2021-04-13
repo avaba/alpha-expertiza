@@ -189,6 +189,37 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   })
 
+  let benefitSlider = new Swiper('.benefit-slider .swiper-container', {
+    slidesPerView: 'auto',
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.benefit-slider .swiper-button-next',
+      prevEl: '.benefit-slider .swiper-button-prev'
+    }
+  })
+
+  let commentSlider = new Swiper('.comment-slider__container', {
+    spaceBetween: 10,
+    autoHeight: true,
+    allowTouchMove: false,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar'
+    },
+
+    // autoplay
+    autoplay: {
+      delay: 6000
+    },
+    navigation: {
+      nextEl: '.comment-slider .swiper-button-next',
+      prevEl: '.comment-slider .swiper-button-prev'
+    }
+  })
+
   // countSwipre
   function countSwipre(swiperName, swiperClass) {
     let counter = $(`.${swiperClass} .swiper-fraction`)
@@ -204,14 +235,44 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   countSwipre(licenzeSlider, 'licenze-slider__slider')
+  countSwipre(commentSlider, 'comment-slider__container')
 
-  var benefitSlider = new Swiper('.benefit-slider .swiper-container', {
+  let commentThumbSlider = new Swiper('.comment-thumb .swiper-container', {
     slidesPerView: 'auto',
+    slidesPerColumn: 1,
     loop: true,
-    // Navigation arrows
+    initialSlide: 1,
+    // centeredSlides: true,
+    autoHeight: true,
+    allowTouchMove: false,
+
+    // autoplay
+    autoplay: {
+      delay: 6000
+    },
     navigation: {
-      nextEl: '.benefit-slider .swiper-button-next',
-      prevEl: '.benefit-slider .swiper-button-prev'
+      nextEl: '.comment-slider .swiper-button-next',
+      prevEl: '.comment-slider .swiper-button-prev'
+    }
+  })
+
+  let commentTextSlider = new Swiper('.comment-text .swiper-container', {
+    slidesPerView: 1,
+    slidesPerColumn: 1,
+    loop: true,
+    initialSlide: 0,
+    effect: 'fade',
+    // centeredSlides: true,
+    autoHeight: true,
+    allowTouchMove: false,
+
+    // autoplay
+    autoplay: {
+      delay: 6000
+    },
+    navigation: {
+      nextEl: '.comment-slider .swiper-button-next',
+      prevEl: '.comment-slider .swiper-button-prev'
     }
   })
 
@@ -297,6 +358,19 @@ document.addEventListener('DOMContentLoaded', function () {
     // last height reduction
     if (height > 101) {
       th.addClass('owerflow')
+    }
+  })
+
+  // faq
+  $('.faq__item-title').on('click', function () {
+    if ($(this).hasClass('open')) {
+      $(this).removeClass('open')
+      $(this).next().slideUp()
+    } else {
+      $(this).closest('.faq__wrap').find('.faq__item-title').removeClass('open')
+      $(this).toggleClass('open')
+      $(this).closest('.faq__wrap').find('.faq__item-text').slideUp()
+      $(this).next().slideDown()
     }
   })
 })
