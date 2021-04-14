@@ -1,16 +1,77 @@
 .contact
     position: relative
-    &__map
+    .section__title
+        margin-bottom: 20px
+        text-align: left
+        font-weight: 300
+    &__maps
         height: 700px
+        &-item
+            height: 0   
+            opacity: 0
+            z-index: -1
+            overflow: hidden
+            &.is-active
+                height: 100%
+                z-index: 1
+                opacity: 1
     &__wrap
         position: absolute
         top: 0
         left: 60%
-        height: 400px
         background: rgba(38, 47, 64, 0.9)
         z-index: 10
         color: $white
         padding: 50px
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            bottom: 0
+            width: 1000%
+            left: 100%
+            background: rgba(38, 47, 64, 0.9)
+    &__tabs
+        width: 325px
+    &__nav
+        display: inline-flex
+        align-items: center
+        border: 1px solid #727986
+        border-radius: 5px
+        margin-bottom: 25px
+        text-align: center
+        width: auto
+        max-width: none
+        &-item
+            padding: 10px 40px
+            font-weight: 500
+            border-radius: 5px
+            transition: all .3s
+            &.is-active
+                background: $white
+                color: #242d3d
+                transition: all .3s
+
+.contact-item
+    display: flex
+    width: 280px
+    margin-bottom: 20px
+    &__icon
+        margin-right: 10px
+        flex: 0 0 32px
+    &__body
+        display: flex
+        flex-direction: column
+        &-title
+            font-size: 24px
+            font-weight: 600
+        &-descr
+            font-size: 18px
+            
+
+
+    
+            
 
 ymaps
     filter: grayscale(100%)

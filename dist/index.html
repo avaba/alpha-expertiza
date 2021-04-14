@@ -1,51 +1,890 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- <base href="/"> -->
 
-    <title>OptimizedHTML 5</title>
-    <meta name="description" content="Startup HTML template OptimizedHTML 5" />
+<head>
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+	<title>
+		OptimizedHTML 5
+	</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	<link rel="stylesheet" href="/libs/swiper/css/swiper.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<div class="header">
+	<div class="container">
+		<!-- header-top -->
+		<div class="header-top">
+			<div class="row justify-content-between align-items-center">
+				<!-- location -->
+				<div class="col-md-auto location">
+					<div class="row">
+						<div class="col-md-auto">
+							<div class="city">
+								<a class="city__link location__item" href="#city">
+									<img class="location__item-icon" src="images/src/map.svg" alt="">
+									<span class="city__link-title location__item-title">Екатеринбург</span>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-auto">
+							<div class="location__item">
+								<img class="location__item-icon" src="images/src/adress.svg" alt="">
+								<span class="location__item-title">ул. Вайнера, 55а, оф 404</span>
+							</div>
+						</div>
+						<div class="col-md-auto">
+							<div class="location__item">
+								<img class="location__item-icon" src="images/src/mail.svg" alt="">
+								<span class="location__item-title">info@aaa-expert.com</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- header contact right -->
+				<div class="col-md-auto">
+					<div class="row align-items-center">
+						<div class="col-md-auto">
+							<div class="messagers">
+								<a class="messagers__item" href="#">
+									<svg
+										 xmlns="http://www.w3.org/2000/svg"
+										 xmlns:xlink="http://www.w3.org/1999/xlink"
+										 width="21px" height="20px">
+										<path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+											  d="M18.046,16.926 C16.151,18.799 13.643,19.830 10.984,19.830 L10.980,19.830 C9.418,19.830 7.870,19.462 6.482,18.763 L1.003,20.009 L2.194,14.596 C1.396,13.123 0.976,11.510 0.975,9.911 L0.975,9.909 L0.975,9.906 C0.978,7.264 2.024,4.770 3.922,2.893 C5.817,1.020 8.325,-0.012 10.984,-0.012 C13.649,-0.010 16.153,1.023 18.036,2.895 C19.944,4.796 20.994,7.289 20.994,9.913 C20.992,12.558 19.946,15.048 18.046,16.926 ZM16.932,4.003 C15.344,2.424 13.232,1.552 10.984,1.552 C6.330,1.552 2.542,5.303 2.539,9.910 C2.539,11.332 2.940,12.775 3.699,14.082 L3.851,14.345 L3.060,17.938 L6.703,17.111 L6.963,17.251 C8.189,17.917 9.578,18.268 10.981,18.269 L10.984,18.269 C15.639,18.269 19.428,14.520 19.430,9.913 C19.430,7.706 18.543,5.607 16.932,4.003 ZM14.003,14.091 C13.583,14.129 13.190,14.281 11.256,13.521 C8.929,12.608 7.459,10.232 7.345,10.080 C7.230,9.929 6.410,8.844 6.410,7.722 C6.410,6.601 7.001,6.049 7.211,5.821 C7.421,5.593 7.669,5.535 7.822,5.535 L8.261,5.535 C8.424,5.543 8.604,5.556 8.776,5.935 L8.776,5.935 C8.979,6.386 9.419,7.513 9.476,7.628 C9.533,7.741 9.571,7.874 9.495,8.027 C9.419,8.179 9.386,8.275 9.272,8.407 C9.157,8.540 9.018,8.680 8.915,8.781 C8.800,8.895 8.681,9.018 8.815,9.247 C8.948,9.475 9.421,10.246 10.102,10.850 C10.976,11.627 11.706,11.871 11.935,11.986 C12.164,12.100 12.298,12.081 12.431,11.929 C12.565,11.777 13.014,11.250 13.167,11.021 C13.320,10.794 13.472,10.831 13.682,10.907 C13.892,10.984 15.014,11.544 15.243,11.659 C15.472,11.772 15.625,11.829 15.682,11.924 C15.739,12.020 15.739,12.476 15.548,13.008 C15.358,13.540 14.423,14.054 14.003,14.091 Z" />
+									</svg>
+								</a>
+								<a class="messagers__item" href="#">
+									<svg
+										 xmlns="http://www.w3.org/2000/svg"
+										 xmlns:xlink="http://www.w3.org/1999/xlink"
+										 width="22px" height="19px">
+										<path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+											  d="M21.573,0.986 C21.313,0.667 20.924,0.492 20.476,0.492 C20.232,0.492 19.975,0.543 19.710,0.645 L1.676,7.524 C0.719,7.889 0.590,8.437 0.598,8.731 C0.607,9.025 0.766,9.564 1.743,9.875 C1.748,9.876 1.754,9.878 1.760,9.880 L5.501,10.950 L7.524,16.731 C7.800,17.519 8.419,18.008 9.140,18.008 C9.594,18.008 10.041,17.818 10.433,17.458 L12.747,15.329 L16.103,18.030 C16.103,18.030 16.104,18.030 16.104,18.030 L16.136,18.055 C16.139,18.058 16.142,18.060 16.145,18.063 C16.518,18.352 16.925,18.505 17.323,18.505 L17.323,18.505 C18.100,18.505 18.719,17.930 18.899,17.041 L21.854,2.460 C21.972,1.875 21.873,1.351 21.573,0.986 ZM6.752,10.746 L13.969,7.063 L9.475,11.834 C9.402,11.912 9.350,12.008 9.324,12.112 L8.457,15.619 L6.752,10.746 ZM9.587,16.541 C9.557,16.568 9.527,16.593 9.497,16.615 L10.301,13.362 L11.763,14.538 L9.587,16.541 ZM20.630,2.212 L17.675,16.793 C17.647,16.933 17.556,17.258 17.323,17.258 C17.207,17.258 17.062,17.194 16.914,17.080 L13.111,14.021 C13.110,14.020 13.110,14.020 13.109,14.019 L10.846,12.198 L17.345,5.298 C17.553,5.076 17.572,4.739 17.390,4.496 C17.207,4.254 16.877,4.177 16.607,4.315 L5.918,9.772 L2.127,8.687 L20.155,1.810 C20.307,1.752 20.414,1.739 20.476,1.739 C20.514,1.739 20.582,1.744 20.607,1.776 C20.640,1.816 20.683,1.954 20.630,2.212 Z" />
+									</svg>
+								</a>
+								<a class="messagers__item" href="#">
+									<svg
+										 xmlns="http://www.w3.org/2000/svg"
+										 xmlns:xlink="http://www.w3.org/1999/xlink"
+										 width="19px" height="19px">
+										<path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+											  d="M18.937,13.414 C18.893,14.422 18.730,15.113 18.496,15.716 C18.003,16.993 16.994,18.002 15.717,18.495 C15.116,18.729 14.423,18.892 13.414,18.936 C12.401,18.980 12.078,18.991 9.500,18.991 C6.922,18.991 6.599,18.980 5.586,18.936 C4.577,18.892 3.887,18.729 3.283,18.495 C2.652,18.258 2.077,17.883 1.602,17.401 C1.120,16.926 0.745,16.355 0.504,15.716 C0.270,15.116 0.107,14.422 0.062,13.414 C0.018,12.401 0.007,12.078 0.007,9.500 C0.007,6.923 0.018,6.600 0.066,5.584 C0.111,4.575 0.274,3.885 0.508,3.280 C0.745,2.650 1.120,2.076 1.602,1.600 C2.077,1.114 2.648,0.744 3.286,0.502 C3.887,0.269 4.581,0.105 5.590,0.061 C6.603,0.017 6.925,0.006 9.504,0.006 C12.082,0.006 12.405,0.017 13.421,0.064 C14.430,0.109 15.120,0.272 15.725,0.507 C16.355,0.744 16.930,1.118 17.405,1.600 C17.891,2.076 18.262,2.646 18.503,3.285 C18.737,3.885 18.900,4.579 18.945,5.587 C18.989,6.600 18.993,6.923 18.993,9.500 C18.993,12.078 18.982,12.401 18.937,13.414 ZM17.235,5.673 C17.194,4.749 17.038,4.245 16.908,3.911 C16.756,3.499 16.515,3.129 16.200,2.820 C15.895,2.505 15.521,2.264 15.109,2.112 C14.775,1.982 14.274,1.827 13.347,1.786 C12.349,1.741 12.049,1.730 9.511,1.730 C6.977,1.730 6.677,1.741 5.675,1.786 C4.752,1.827 4.247,1.982 3.913,2.112 C3.501,2.264 3.130,2.505 2.822,2.820 C2.503,3.124 2.262,3.499 2.110,3.911 C1.980,4.245 1.825,4.746 1.784,5.673 C1.739,6.670 1.728,6.975 1.728,9.508 C1.728,12.041 1.739,12.341 1.784,13.343 C1.825,14.266 1.980,14.772 2.110,15.105 C2.262,15.517 2.503,15.887 2.819,16.195 C3.123,16.511 3.498,16.751 3.909,16.904 C4.243,17.033 4.744,17.189 5.671,17.229 C6.669,17.275 6.974,17.286 9.507,17.286 C12.041,17.286 12.342,17.275 13.343,17.229 C14.267,17.189 14.771,17.033 15.105,16.904 C15.933,16.585 16.589,15.928 16.908,15.102 C17.038,14.767 17.194,14.266 17.235,13.339 C17.279,12.338 17.290,12.041 17.290,9.508 C17.290,6.975 17.279,6.675 17.235,5.673 ZM14.575,5.569 C13.946,5.569 13.436,5.059 13.436,4.431 C13.436,3.801 13.946,3.292 14.575,3.292 C15.204,3.292 15.714,3.801 15.714,4.431 C15.714,5.059 15.204,5.569 14.575,5.569 ZM9.504,14.378 C6.811,14.378 4.625,12.193 4.625,9.500 C4.625,6.808 6.811,4.624 9.504,4.624 C12.197,4.624 14.382,6.808 14.382,9.500 C14.382,12.193 12.197,14.378 9.504,14.378 ZM9.504,6.336 C7.756,6.336 6.339,7.754 6.339,9.500 C6.339,11.248 7.756,12.664 9.504,12.664 C11.251,12.664 12.668,11.248 12.668,9.500 C12.668,7.754 11.251,6.336 9.504,6.336 Z" />
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-auto">
+							<a class="header-top__phone" href="tel:+74952910743">+7 (495) 291 07 43</a>
+						</div>
+						<div class="col-md-auto">
+							<a class="header-top__call" href="#">Заказать звонок</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- header-bot -->
+		<div class="header-bot">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-md-9">
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-auto">
+							<a href="/"><img src="../images/dist/logo.png" alt=""></a>
+						</div>
+						<div class="col-md-auto header-menu">
+							<button class="header-menu__burger">
+								<img src="../images/dist/burger.svg" alt="">
+							</button>
+						</div>
+						<div class="col-md-auto">
+							<div class="header-bot__menu">
+								<ul>
+									<li class="menu-item-has-children">
+										<a href="">Государственная экологическая экспертиза</a>
+									</li>
+									<li class="menu-item-has-children">
+										<a href="">Лицензия на отходы</a>
+									</li>
+									<li class="menu-item-has-children">
+										<a href="">Готовый бизнес</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-auto search">
+					<button class="search__btn">
+						<img src="../images/dist/luppa.svg" alt="">
+					</button>
+					<form class="search__form">
+						<input class="search__form-input" type="text">
+						<button class="search__form-close" type="button">
+							<img src="../images/dist/close-search.svg" alt="">
+						</button>
+						<button class="search__form-submit" type="submit">
+							<img src="../images/dist/luppa-black.svg" alt="">
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-    <meta name="viewport" content="width=device-width" />
+<body>
 
-    <link rel="icon" href="images/favicon.png" />
-    <meta property="og:image" content="images/dist/preview.jpg" />
-
-    <link rel="stylesheet" href="css/main.min.css" />
-  </head>
-
-  <header class="header">
-    <div class="container">
-      <div class="top-header">
-        <div class="city">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="16px"
-            height="19px"
-          >
-            <path
-              fill-rule="evenodd"
-              fill-opacity="0.302"
-              fill="rgb(255, 255, 255)"
-              d="M8.287,0.616 C11.704,0.611 14.828,3.131 15.445,6.497 C16.012,9.591 14.990,12.102 12.481,13.987 C11.316,14.862 10.341,15.901 9.602,17.159 C9.405,17.494 9.208,17.827 9.005,18.159 C8.643,18.746 7.916,18.747 7.560,18.154 C7.066,17.328 6.567,16.509 5.939,15.775 C5.269,14.991 4.487,14.336 3.690,13.689 C2.080,12.383 1.168,10.679 0.995,8.607 C0.678,4.809 3.229,1.463 6.963,0.761 C7.398,0.678 7.845,0.663 8.287,0.616 ZM5.032,7.988 C5.025,9.780 6.472,11.236 8.279,11.254 C10.048,11.272 11.523,9.805 11.533,8.016 C11.543,6.207 10.098,4.729 8.315,4.723 C6.491,4.718 5.040,6.162 5.032,7.988 Z"
-            />
-          </svg>
-        </div>
-      </div>
+<section class="home-hero">
+    <div class="home-hero__bg">
+        <img src="/images/dist/home.png" alt="" class="home-hero__bg-img" data-parallax='{"y": -300, "smoothness": 5}'>
     </div>
-  </header>
+    <div class="container">
+        <div class="row home-hero__title">
+            <div class="col-md-7">
+                <h1><strong>Получим лицензию</strong> на обращение с отходами 1-4 класса опасности "под ключ" от 500 000 руб.</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="advantages">
+                    <div class="advantages__item">
+                        <img class="advantages__item-img" src="/images/dist/adv1.svg" alt="">
+                        <h4 class="advantages__item-title">Получим для Вас лицензию "под ключ"</h4>
+                        <p class="advantages__item-text">Разработаем все документы для получения СЭЗ и лицензии, лично пройдем выездную проверку госорганов.</p>
+                        <div class="advantages__info">
+                            <span class="advantages__info-icon">
+                                <svg
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="20px" height="20px">
+                                    <path class="shape-svg" fill-rule="evenodd" fill="rgb(170, 181, 201)"
+                                          d="M7.000,-0.000 L13.000,-0.000 C16.866,-0.000 20.000,3.134 20.000,6.999 L20.000,13.000 C20.000,16.866 16.866,20.000 13.000,20.000 L-0.000,20.000 L-0.000,6.999 C-0.000,3.134 3.134,-0.000 7.000,-0.000 Z" />
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                          d="M11.989,14.203 L11.822,14.887 C11.319,15.087 10.918,15.237 10.619,15.341 C10.320,15.446 9.972,15.497 9.576,15.497 C8.968,15.497 8.495,15.348 8.158,15.052 C7.820,14.754 7.651,14.377 7.651,13.920 C7.651,13.744 7.664,13.562 7.689,13.376 C7.715,13.190 7.756,12.981 7.811,12.748 L8.439,10.523 C8.495,10.310 8.543,10.109 8.581,9.918 C8.619,9.728 8.638,9.554 8.638,9.396 C8.638,9.112 8.579,8.913 8.462,8.802 C8.345,8.691 8.122,8.634 7.790,8.634 C7.628,8.634 7.461,8.660 7.291,8.711 C7.121,8.761 6.974,8.810 6.852,8.855 L7.020,8.169 C7.431,8.002 7.824,7.858 8.200,7.739 C8.577,7.620 8.932,7.560 9.268,7.560 C9.872,7.560 10.338,7.706 10.666,7.998 C10.993,8.290 11.156,8.670 11.156,9.136 C11.156,9.234 11.146,9.403 11.123,9.647 C11.100,9.891 11.058,10.115 10.997,10.318 L10.372,12.533 C10.320,12.711 10.274,12.915 10.234,13.143 C10.193,13.372 10.173,13.545 10.173,13.661 C10.173,13.956 10.239,14.157 10.370,14.263 C10.502,14.370 10.730,14.423 11.054,14.423 C11.206,14.423 11.379,14.396 11.571,14.343 C11.763,14.290 11.903,14.244 11.989,14.203 ZM12.148,4.902 C12.148,5.288 12.003,5.617 11.710,5.889 C11.419,6.160 11.068,6.297 10.657,6.297 C10.245,6.297 9.893,6.160 9.599,5.889 C9.305,5.617 9.157,5.288 9.157,4.902 C9.157,4.517 9.305,4.186 9.599,3.912 C9.893,3.638 10.245,3.501 10.657,3.501 C11.068,3.501 11.419,3.638 11.710,3.912 C12.003,4.186 12.148,4.517 12.148,4.902 Z" />
+                                </svg>
+                            </span>
+                            <p class="advantages__info-text">Большой опыт получения лицензий в различных регионах РФ позволяет нам точно знать на что обратит внимание инспектор на документарной или выездной проверке. Благодаря этому мы исключаем все ошибки на начальном этапе - на сборе исходных данных и составлении пакета документов.</p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <img class="advantages__item-img" src="/images/dist/adv2.svg" alt="">
+                        <h4 class="advantages__item-title">Доведем работу до положительного результата</h4>
+                        <p class="advantages__item-text">Большой опыт получения лицензий в различных регионах РФ</p>
+                        <div class="advantages__info">
+                            <span class="advantages__info-icon">
+                                <svg
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="20px" height="20px">
+                                    <path class="shape-svg" fill-rule="evenodd" fill="rgb(170, 181, 201)"
+                                          d="M7.000,-0.000 L13.000,-0.000 C16.866,-0.000 20.000,3.134 20.000,6.999 L20.000,13.000 C20.000,16.866 16.866,20.000 13.000,20.000 L-0.000,20.000 L-0.000,6.999 C-0.000,3.134 3.134,-0.000 7.000,-0.000 Z" />
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                          d="M11.989,14.203 L11.822,14.887 C11.319,15.087 10.918,15.237 10.619,15.341 C10.320,15.446 9.972,15.497 9.576,15.497 C8.968,15.497 8.495,15.348 8.158,15.052 C7.820,14.754 7.651,14.377 7.651,13.920 C7.651,13.744 7.664,13.562 7.689,13.376 C7.715,13.190 7.756,12.981 7.811,12.748 L8.439,10.523 C8.495,10.310 8.543,10.109 8.581,9.918 C8.619,9.728 8.638,9.554 8.638,9.396 C8.638,9.112 8.579,8.913 8.462,8.802 C8.345,8.691 8.122,8.634 7.790,8.634 C7.628,8.634 7.461,8.660 7.291,8.711 C7.121,8.761 6.974,8.810 6.852,8.855 L7.020,8.169 C7.431,8.002 7.824,7.858 8.200,7.739 C8.577,7.620 8.932,7.560 9.268,7.560 C9.872,7.560 10.338,7.706 10.666,7.998 C10.993,8.290 11.156,8.670 11.156,9.136 C11.156,9.234 11.146,9.403 11.123,9.647 C11.100,9.891 11.058,10.115 10.997,10.318 L10.372,12.533 C10.320,12.711 10.274,12.915 10.234,13.143 C10.193,13.372 10.173,13.545 10.173,13.661 C10.173,13.956 10.239,14.157 10.370,14.263 C10.502,14.370 10.730,14.423 11.054,14.423 C11.206,14.423 11.379,14.396 11.571,14.343 C11.763,14.290 11.903,14.244 11.989,14.203 ZM12.148,4.902 C12.148,5.288 12.003,5.617 11.710,5.889 C11.419,6.160 11.068,6.297 10.657,6.297 C10.245,6.297 9.893,6.160 9.599,5.889 C9.305,5.617 9.157,5.288 9.157,4.902 C9.157,4.517 9.305,4.186 9.599,3.912 C9.893,3.638 10.245,3.501 10.657,3.501 C11.068,3.501 11.419,3.638 11.710,3.912 C12.003,4.186 12.148,4.517 12.148,4.902 Z" />
+                                </svg>
+                            </span>
+                            <p class="advantages__info-text">Большой опыт получения лицензий в различных регионах РФ позволяет нам точно знать на что обратит внимание инспектор на документарной или выездной проверке. Благодаря этому мы исключаем все ошибки на начальном этапе - на сборе исходных данных и составлении пакета документов.</p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <img class="advantages__item-img" src="/images/dist/adv3.svg" alt="">
+                        <h4 class="advantages__item-title">Говорим с Вами на одном языке</h4>
+                        <p class="advantages__item-text">Мы имеем собственный практический опыт работы с отходами</p>
+                        <div class="advantages__info">
+                            <span class="advantages__info-icon">
+                                <svg
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="20px" height="20px">
+                                    <path class="shape-svg" fill-rule="evenodd" fill="rgb(170, 181, 201)"
+                                          d="M7.000,-0.000 L13.000,-0.000 C16.866,-0.000 20.000,3.134 20.000,6.999 L20.000,13.000 C20.000,16.866 16.866,20.000 13.000,20.000 L-0.000,20.000 L-0.000,6.999 C-0.000,3.134 3.134,-0.000 7.000,-0.000 Z" />
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                          d="M11.989,14.203 L11.822,14.887 C11.319,15.087 10.918,15.237 10.619,15.341 C10.320,15.446 9.972,15.497 9.576,15.497 C8.968,15.497 8.495,15.348 8.158,15.052 C7.820,14.754 7.651,14.377 7.651,13.920 C7.651,13.744 7.664,13.562 7.689,13.376 C7.715,13.190 7.756,12.981 7.811,12.748 L8.439,10.523 C8.495,10.310 8.543,10.109 8.581,9.918 C8.619,9.728 8.638,9.554 8.638,9.396 C8.638,9.112 8.579,8.913 8.462,8.802 C8.345,8.691 8.122,8.634 7.790,8.634 C7.628,8.634 7.461,8.660 7.291,8.711 C7.121,8.761 6.974,8.810 6.852,8.855 L7.020,8.169 C7.431,8.002 7.824,7.858 8.200,7.739 C8.577,7.620 8.932,7.560 9.268,7.560 C9.872,7.560 10.338,7.706 10.666,7.998 C10.993,8.290 11.156,8.670 11.156,9.136 C11.156,9.234 11.146,9.403 11.123,9.647 C11.100,9.891 11.058,10.115 10.997,10.318 L10.372,12.533 C10.320,12.711 10.274,12.915 10.234,13.143 C10.193,13.372 10.173,13.545 10.173,13.661 C10.173,13.956 10.239,14.157 10.370,14.263 C10.502,14.370 10.730,14.423 11.054,14.423 C11.206,14.423 11.379,14.396 11.571,14.343 C11.763,14.290 11.903,14.244 11.989,14.203 ZM12.148,4.902 C12.148,5.288 12.003,5.617 11.710,5.889 C11.419,6.160 11.068,6.297 10.657,6.297 C10.245,6.297 9.893,6.160 9.599,5.889 C9.305,5.617 9.157,5.288 9.157,4.902 C9.157,4.517 9.305,4.186 9.599,3.912 C9.893,3.638 10.245,3.501 10.657,3.501 C11.068,3.501 11.419,3.638 11.710,3.912 C12.003,4.186 12.148,4.517 12.148,4.902 Z" />
+                                </svg>
+                            </span>
+                            <p class="advantages__info-text">Большой опыт получения лицензий в различных регионах РФ позволяет нам точно знать на что обратит внимание инспектор на документарной или выездной проверке. Благодаря этому мы исключаем все ошибки на начальном этапе - на сборе исходных данных и составлении пакета документов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="name-block" data-parallax='{"y": -150, "smoothness": 10}'>
+                    <div class="name-block__wrap">
+                        <span class="name-block__name">Саттаров<br> Дмитрий<br> Ринатович</span>
+                        <span class="name-block__descr">Руководитель<br> “Альфа Экспертиза”</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="home-hero__dir" src="/images/dist/dir.png" alt="">
+</section>
 
-  <body></body>
-</html>
+<section class="quiz wow animate__fadeInUp">
+    <div class="container">
+        <div class="quiz__wrap">
+            <span class="quiz__title">Рассчитайте за 30 секунд стоимость получения лицензии на отходы</span>
+            <form class="quiz__form">
+                <fieldset class="quiz__step">
+                    <h3 class="quiz__step-title">В какой форме Вы осуществляете свою деятельность?</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="label label-radio">
+                                <input type="radio" name="step1" value="ИП" class="label-radio__input">
+                                <span class="label-radio__label">ИП</span>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="label label-radio">
+                                <input type="radio" name="step1" value="ООО" class="label-radio__input">
+                                <span class="label-radio__label">ООО</span>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="label label-radio">
+                                <input type="radio" name="step1" value="Другое" class="label-radio__input">
+                                <span class="label-radio__label">Другое</span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="quiz__step">
+                    <h3 class="quiz__step-title">В какой форме Вы осуществляете свою деятельность?</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="label label-radio">
+                                <input type="radio" name="step2" value="ИП" class="label-radio__input">
+                                <span class="label-radio__label">ИП</span>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="label label-radio">
+                                <input type="radio" name="step2" value="ООО" class="label-radio__input">
+                                <span class="label-radio__label">ООО</span>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="label label-radio">
+                                <input type="radio" name="step2" value="Другое" class="label-radio__input">
+                                <span class="label-radio__label">Другое</span>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="label label-radio">
+                                <input type="radio" name="step2" value="Другое" class="label-radio__input">
+                                <span class="label-radio__label">Другое</span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="quiz__step">
+                    <h3 class="quiz__step-title">В какой форме Вы осуществляете свою деятельность?</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="label label-radio">
+                                <input type="radio" name="step3" value="ИП" class="label-radio__input">
+                                <span class="label-radio__label">ИП</span>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="label label-radio">
+                                <input type="radio" name="step3" value="ООО" class="label-radio__input">
+                                <span class="label-radio__label">ООО</span>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="label label-radio">
+                                <input type="radio" name="step3" value="Другое" class="label-radio__input">
+                                <span class="label-radio__label">Другое</span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="quiz__step">
+                    <h3 class="quiz__step-title">В какой форме Вы осуществляете свою деятельность?</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="label label-radio">
+                                <input type="radio" name="step4" value="ИП" class="label-radio__input">
+                                <span class="label-radio__label">ИП</span>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="label label-radio">
+                                <input type="radio" name="step4" value="ООО" class="label-radio__input">
+                                <span class="label-radio__label">ООО</span>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="label label-radio">
+                                <input type="radio" name="step4" value="Другое" class="label-radio__input">
+                                <span class="label-radio__label">Другое</span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="quiz__step">
+                    <h3 class="quiz__step-title">Укажите ваши данные и получите выгодное предложение</h3>
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <label class="label label-input">
+                                <input type="text" placeholder="Ваше имя" required>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="label label-input">
+                                <input class="phone-js" type="text" placeholder="Телефон" required>
+                            </label>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-md-4">
+                            <button class="submit">Получить предложение</button>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="polit">Нажимая на кнопку Вы соглашаетесь с<br> <a href="#">политикой обработки персональных данных</a></p>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>
 
+<section class="section">
+    <div class="licenze">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="section__title">Лицензия на отходы</h2>
+                    <p class="licenze__quote">Лицензия на отходы – документ выдаваемый Росприроднадзором, разрешающий сбор, транспортирование, обработку, утилизацию, обезвреживание и размещение отходов I-IV класса опасности, действующий на всей территории РФ.</p>
+                    <p>Для осуществления деятельности по сбору, транспортировке, обработке, утилизации, обезвреживанию и размещению отходов I-IV классов опасности, наличие Лицензии является обязательным условием. Эта работа крайне ответственна и нередко опасна. Поэтому при выдаче Лицензии к соискателям предъявляются повышенные требования. Малейшая ошибка в оформлении документов – и всё придётся начинать сначала, что приведёт к большим финансовым потерям и затягиванию сроков получения лицензии.</p>
+                </div>
+            </div>
+        </div>
+        <div class="licenze-slider">
+            <div class="licenze-slider__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide licenze-slider__item" style="background-image: url(/images/dist/slide1.png);">
+                        <span class="licenze-slider__item-title">Виды деятельности подлежащие лицензированию</span>
+                        <div class="licenze-slider__body">
+                            <h5 class="licenze-slider__body-title">Сбор</h5>
+                            <p class="licenze-slider__body-text">Прием отходов с целью дальнейшей обработки, утилизации, обезвреживания или размещения</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide licenze-slider__item" style="background-image: url(/images/dist/slide1.png);">
+                        <span class="licenze-slider__item-title">Виды деятельности подлежащие лицензированию</span>
+                        <div class="licenze-slider__body">
+                            <h5 class="licenze-slider__body-title">Сбор</h5>
+                            <p class="licenze-slider__body-text">Прием отходов с целью дальнейшей обработки, утилизации, обезвреживания или размещения</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide licenze-slider__item" style="background-image: url(/images/dist/slide1.png);">
+                        <span class="licenze-slider__item-title">Виды деятельности подлежащие лицензированию</span>
+                        <div class="licenze-slider__body">
+                            <h5 class="licenze-slider__body-title">Сбор</h5>
+                            <p class="licenze-slider__body-text">Прием отходов с целью дальнейшей обработки, утилизации, обезвреживания или размещения</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need pagination -->
+                <div class="swiper-fraction"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div class="home-hero"></div>
+<section class="section service">
+    <img class="service__bg" src="/images/dist/service-bg.png" alt="" data-parallax='{"y": -500, "smoothness": 15, "distance": 1358}'>
+    <div class="container">
+        <h2 class="section__title">Оказываем полный спектр услуг для<br> наших клиентов</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service__animate">
+                    <a class="service__item" href="#">
+                        <span class="wow service__item-img" style="background-image: url(/images/dist/service1.png);" data-wow-delay="0s"></span>
+                        <span class="service__item-title">Получение лицензии</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service__animate">
+                    <a class="service__item" href="#">
+                        <span class="wow service__item-img" style="background-image: url(/images/dist/service1.png);" data-wow-delay="0.2s"></span>
+                        <span class="service__item-title">Получение лицензии</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service__animate">
+                    <a class="service__item" href="#">
+                        <span class="wow service__item-img" style="background-image: url(/images/dist/service1.png);" data-wow-delay="0.4s"></span>
+                        <span class="service__item-title">Подбор площадки для осуществления деятельности по обработке, утилизации, обезвреживанию или размещению отходов</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service__animate">
+                    <a class="service__item" href="#">
+                        <span class="wow service__item-img" style="background-image: url(/images/dist/service1.png);" data-wow-delay="0s"></span>
+                        <span class="service__item-title">Получение лицензии</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service__animate">
+                    <a class="service__item" href="#">
+                        <span class="wow service__item-img" style="background-image: url(/images/dist/service1.png);" data-wow-delay="0.2s"></span>
+                        <span class="service__item-title">Получение лицензии</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service__animate">
+                    <a class="service__item" href="#">
+                        <span class="wow service__item-img" style="background-image: url(/images/dist/service1.png);" data-wow-delay="0.4s"></span>
+                        <span class="service__item-title">Подбор площадки для осуществления деятельности по обработке, утилизации, обезвреживанию или размещению отходов</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service__animate">
+                    <a class="service__item" href="#">
+                        <span class="wow service__item-img" style="background-image: url(/images/dist/service1.png);" data-wow-delay="0s"></span>
+                        <span class="service__item-title">Получение лицензии</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service__animate">
+                    <a class="service__item" href="#">
+                        <span class="wow service__item-img" style="background-image: url(/images/dist/service1.png);" data-wow-delay="0.2s"></span>
+                        <span class="service__item-title">Получение лицензии</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service__animate">
+                    <a class="service__item" href="#">
+                        <span class="wow service__item-img" style="background-image: url(/images/dist/service1.png);" data-wow-delay="0.4s"></span>
+                        <span class="service__item-title">Подбор площадки для осуществления деятельности по обработке, утилизации, обезвреживанию или размещению отходов</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-	<script src="../libs/old-script/scripts.min.js"></script>
+<section class="section graph">
+    <div class="container">
+        <h2 class="section__title">График последовательности этапов<br> и сроков получеиния лицензии</h2>
+        <div class="graph__tabs tabs">
+            <div class="graph__nav tabs__nav">
+                <span class="graph__nav-item tabs__nav-item">Транспортирование</span>
+                <span class="graph__nav-item tabs__nav-item">Обработка</span>
+                <span class="graph__nav-item tabs__nav-item">Размещение</span>
+                <span class="graph__nav-line"></span>
+            </div>
+            <div class="graph__content tabs__content">
+                <img src="/images/dist/graph1.png" alt="">
+            </div>
+            <div class="graph__content tabs__content">
+                <img src="/images/dist/graph1.png" alt="">
+            </div>
+            <div class="graph__content tabs__content">
+                <img src="/images/dist/graph1.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section benefit">
+    <div class="benefit__wrap">
+        <img class="benefit__img" src="/images/dist/benefit.png" alt="" data-parallax='{"y": -100,  "smoothness": 10}'>
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-md-9">
+                    <div class="benefit__body" data-parallax='{"y": -150,  "smoothness": 10}'>
+                        <h2 class="benefit__title">Преимущества получения лицензии с<br> Альфа Экспертиза</h2>
+                        <div class="benefit-card">
+                            <div class="benefit-card__item">
+                                <img class="benefit-card__item-img" src="/images/dist/b-card.svg" alt="">
+                                <div class="benefit-card__item--body">
+                                    <h4 class="benefit-card__item--body-title">Кратчайшие сроки получения лицензии от 3-х месяцев</h4>
+                                    <p class="benefit-card__item--body-text">Гарантируем соблюдение сроков отдельным пунктом в договоре, за срыв сроков отвечаем деньгами.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-card__item">
+                                <img class="benefit-card__item-img" src="/images/dist/b-card.svg" alt="">
+                                <div class="benefit-card__item--body">
+                                    <h4 class="benefit-card__item--body-title">Кратчайшие сроки получения лицензии от 3-х месяцев</h4>
+                                    <p class="benefit-card__item--body-text">Мы всегда стремимся превзойти ожидания клиентов нашим профессионализмом и высочайшим уровнем компетенций. Именно поэтому в нашей команде работают лучшие эксперты с успешным опытом работы от 10 лет, что гарантирует для Вас качественное решение всех задач.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-card__item">
+                                <img class="benefit-card__item-img" src="/images/dist/b-card.svg" alt="">
+                                <div class="benefit-card__item--body">
+                                    <h4 class="benefit-card__item--body-title">Кратчайшие сроки получения лицензии от 3-х месяцев</h4>
+                                    <p class="benefit-card__item--body-text">Мы всегда стремимся превзойти ожидания клиентов нашим профессионализмом и высочайшим уровнем компетенций. Именно поэтому в нашей команде работают лучшие эксперты с успешным опытом работы от 10 лет, что гарантирует для Вас качественное решение всех задач.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-card__item">
+                                <img class="benefit-card__item-img" src="/images/dist/b-card.svg" alt="">
+                                <div class="benefit-card__item--body">
+                                    <h4 class="benefit-card__item--body-title">Кратчайшие сроки получения лицензии от 3-х месяцев</h4>
+                                    <p class="benefit-card__item--body-text">Мы всегда стремимся превзойти ожидания клиентов нашим профессионализмом и высочайшим уровнем компетенций. Именно поэтому в нашей команде работают лучшие эксперты с успешным опытом работы от 10 лет</p>
+                                </div>
+                            </div>
+                            <div class="benefit-card__item">
+                                <img class="benefit-card__item-img" src="/images/dist/b-card.svg" alt="">
+                                <div class="benefit-card__item--body">
+                                    <h4 class="benefit-card__item--body-title">Кратчайшие сроки получения лицензии от 3-х месяцев</h4>
+                                    <p class="benefit-card__item--body-text">Гарантируем соблюдение сроков отдельным пунктом в договоре, за срыв сроков отвечаем деньгами.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-card__item">
+                                <img class="benefit-card__item-img" src="/images/dist/b-card.svg" alt="">
+                                <div class="benefit-card__item--body">
+                                    <h4 class="benefit-card__item--body-title">Кратчайшие сроки получения лицензии от 3-х месяцев</h4>
+                                    <p class="benefit-card__item--body-text">Гарантируем соблюдение сроков отдельным пунктом в договоре, за срыв сроков отвечаем деньгами.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-card__item">
+                                <img class="benefit-card__item-img" src="/images/dist/b-card.svg" alt="">
+                                <div class="benefit-card__item--body">
+                                    <h4 class="benefit-card__item--body-title">Можем привлечь дополнительных специалистов для строительства предприятия</h4>
+                                </div>
+                            </div>
+                            <div class="benefit-card__item">
+                                <div class="benefit-card__item--body">
+                                    <p class="benefit-card__item--body-text">Гарантируем соблюдение сроков отдельным пунктом в договоре, за срыв сроков отвечаем деньгами.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wow animate__fadeInUp">
+        <div class="benefit__bot" data-parallax='{"y": -150, "smoothness": 10}'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="benefit-call">
+                            <h4 class="benefit-call__title">Все наши клиенты уже получили свою лицензию</h4>
+                            <p class="benefit-call__text">Вот несколько лицензий, которые мы уже получили по новому регламенту</p>
+                            <a href="#" class="btn btn-arrow btn-white">Получить свою лицензию</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="benefit-slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide benefit-slider__item">
+                            <div class="benefit-slider__slide" style="background-image: url(/images/dist/b-slide.png);">
+                                <div class="benefit-slider__slide-left">
+                                    <span class="benefit-slider__slide-title">ООО «Аргос»</span>
+                                    <span class="benefit-slider__slide-descr">Получили лицензию для предприятия которое занимается переработкой отходов</span>
+                                    <a class="link-more" href="#">Подробнее</a>
+                                </div>
+                                <div class="benefit-slider__slide-right">
+                                    <img src="/images/dist/sert.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide benefit-slider__item">
+                            <div class="benefit-slider__slide" style="background-image: url(/images/dist/b-slide.png);">
+                                <div class="benefit-slider__slide-left">
+                                    <span class="benefit-slider__slide-title">ООО «Аргос»</span>
+                                    <span class="benefit-slider__slide-descr">Получили лицензию для предприятия которое занимается переработкой отходов</span>
+                                    <a class="link-more" href="#">Подробнее</a>
+                                </div>
+                                <div class="benefit-slider__slide-right">
+                                    <img src="/images/dist/sert.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide benefit-slider__item">
+                            <div class="benefit-slider__slide" style="background-image: url(/images/dist/b-slide.png);">
+                                <div class="benefit-slider__slide-left">
+                                    <span class="benefit-slider__slide-title">ООО «Аргос»</span>
+                                    <span class="benefit-slider__slide-descr">Получили лицензию для предприятия которое занимается переработкой отходов</span>
+                                    <a class="link-more" href="#">Подробнее</a>
+                                </div>
+                                <div class="benefit-slider__slide-right">
+                                    <img src="/images/dist/sert.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section comment">
+    <div class="container">
+        <h2 class="section__title">Мы подходим ответственно к своей работе<br> и всегда выполняем данные обещания</h2>
+        <p class="section__descr">Вот что о нас говорят наши клиенты</p>
+    </div>
+    <div class="comment__wrap" data-parallax='{"y": -150, "smoothness": 10}'>
+        <div class="comment-thumb">
+            <div class="swiper-container" dir="rtl">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(/images/dist/comment1.png);">
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(/images/dist/comment2.png);">
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(/images/dist/comment3.png);">
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(/images/dist/comment4.png);">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-slider">
+            <div class="swiper-container comment-slider__container" dir="rtl">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="comment-slider__item" style="background-image: url(/images/dist/comment1.png);">
+                            <div class="comment-slider__item-body">
+                                <h3 class="comment-slider__item-name">Циппер Марина Викторовна </h3>
+                                <p class="comment-slider__item-text">Директор ООО "Экотехнологии"<br> (ГК «Центр»)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comment-slider__item" style="background-image: url(/images/dist/comment2.png);">
+                            <div class="comment-slider__item-body">
+                                <h3 class="comment-slider__item-name">Циппер Марина Викторовна </h3>
+                                <p class="comment-slider__item-text">Директор ООО "Экотехнологии"<br> (ГК «Центр»)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comment-slider__item" style="background-image: url(/images/dist/comment3.png);">
+                            <div class="comment-slider__item-body">
+                                <h3 class="comment-slider__item-name">Циппер Марина Викторовна </h3>
+                                <p class="comment-slider__item-text">Директор ООО "Экотехнологии"<br> (ГК «Центр»)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comment-slider__item" style="background-image: url(/images/dist/comment4.png);">
+                            <div class="comment-slider__item-body">
+                                <h3 class="comment-slider__item-name">Циппер Марина Викторовна </h3>
+                                <p class="comment-slider__item-text">Директор ООО "Экотехнологии"<br> (ГК «Центр»)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need pagination -->
+                <div class="swiper-fraction"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-text">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="comment-text__item">
+                            <h3>Слайд 1!</h3>
+                            <p>Являемся хорошими партнёрами компании "Альфа Экспертиза". В этот раз обратились к ним в начале 2020 года, по поводу получения лицензии на отходы. Только в "Альфа Экспертиза" сделали лицензию на утилизацию медотходов за 1,5 месяца. У других только через 3 и не факт, что получится. Сотрудники компании сработали на опережение, подготовили все документы в указанные сроки, а также оказали рычаг давления на Росприроднадзор. Заплатила за услуги приличную сумму, но выполнили в срок, за качественную работу не жалко хорошо платить. Я хочу выразить глубочайшую благодарность сотрудникам и руководству "Альфа Экспертиза" за своевременное и гарантированное получение лицензии на отходы.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comment-text__item">
+                            <h3>Слайд 2</h3>
+                            <p>Являемся хорошими партнёрами компании "Альфа Экспертиза". В этот раз обратились к ним в начале 2020 года, по поводу получения лицензии на отходы. Только в "Альфа Экспертиза" сделали лицензию на утилизацию медотходов за 1,5 месяца. У других только через 3 и не факт, что получится. Сотрудники компании сработали на опережение, подготовили все документы в указанные сроки, а также оказали рычаг давления на Росприроднадзор. Заплатила за услуги приличную сумму, но выполнили в срок, за качественную работу не жалко хорошо платить. Я хочу выразить глубочайшую благодарность сотрудникам и руководству "Альфа Экспертиза" за своевременное и гарантированное получение лицензии на отходы.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comment-text__item">
+                            <h3>Слайд 3</h3>
+                            <p>Являемся хорошими партнёрами компании "Альфа Экспертиза". В этот раз обратились к ним в начале 2020 года, по поводу получения лицензии на отходы. Только в "Альфа Экспертиза" сделали лицензию на утилизацию медотходов за 1,5 месяца. У других только через 3 и не факт, что получится. Сотрудники компании сработали на опережение, подготовили все документы в указанные сроки, а также оказали рычаг давления на Росприроднадзор. Заплатила за услуги приличную сумму, но выполнили в срок, за качественную работу не жалко хорошо платить. Я хочу выразить глубочайшую благодарность сотрудникам и руководству "Альфа Экспертиза" за своевременное и гарантированное получение лицензии на отходы.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comment-text__item">
+                            <h3>Слайд 4</h3>
+                            <p>Являемся хорошими партнёрами компании "Альфа Экспертиза". В этот раз обратились к ним в начале 2020 года, по поводу получения лицензии на отходы. Только в "Альфа Экспертиза" сделали лицензию на утилизацию медотходов за 1,5 месяца. У других только через 3 и не факт, что получится. Сотрудники компании сработали на опережение, подготовили все документы в указанные сроки, а также оказали рычаг давления на Росприроднадзор. Заплатила за услуги приличную сумму, но выполнили в срок, за качественную работу не жалко хорошо платить. Я хочу выразить глубочайшую благодарность сотрудникам и руководству "Альфа Экспертиза" за своевременное и гарантированное получение лицензии на отходы.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team">
+    <div data-parallax='{"y": -150, "smoothness": 10}'>
+        <div class="container">
+            <div class="team__head">
+                <h2 class="team__head-title">В команде Альфа Экспертиза лучшие<br> эксперты в сфере экологии</h2>
+                <p class="team__head-descr">Стаж работы каждого специалиста от 5 лет</p>
+            </div>
+        </div>
+        <div class="team__wrap">
+            <div class="team__wrap-col">
+                <div class="team__item" style="background-image: url(../images/dist/team1.png);">
+                    <div class="team__item-body">
+                        <span class="team__item-name">Иван Васильевич</span>
+                        <span class="team__item-profession">Старший юрист</span>
+                        <span class="team__item--icon team__item--icon-year">12 лет практики</span>
+                        <span class="team__item--icon team__item--icon-licenze">34 лицензии получено</span>
+                        <a href="#" class="btn btn-default">Получить консультацию</a>
+                    </div>
+                </div>
+            </div>
+            <div class="team__wrap-col">
+                <div class="team__item" style="background-image: url(../images/dist/team1.png);">
+                    <div class="team__item-body">
+                        <span class="team__item-name">Иван Васильевич</span>
+                        <span class="team__item-profession">Старший юрист</span>
+                        <span class="team__item--icon team__item--icon-year">12 лет практики</span>
+                        <span class="team__item--icon team__item--icon-licenze">34 лицензии получено</span>
+                        <a href="#" class="btn btn-default">Получить консультацию</a>
+                    </div>
+                </div>
+            </div>
+            <div class="team__wrap-col">
+                <div class="team__item" style="background-image: url(../images/dist/team1.png);">
+                    <div class="team__item-body">
+                        <span class="team__item-name">Иван Васильевич</span>
+                        <span class="team__item-profession">Старший юрист</span>
+                        <span class="team__item--icon team__item--icon-year">12 лет практики</span>
+                        <span class="team__item--icon team__item--icon-licenze">34 лицензии получено</span>
+                        <a href="#" class="btn btn-default">Получить консультацию</a>
+                    </div>
+                </div>
+            </div>
+            <div class="team__wrap-col">
+                <div class="team__item" style="background-image: url(../images/dist/team1.png);">
+                    <div class="team__item-body">
+                        <span class="team__item-name">Иван Васильевич</span>
+                        <span class="team__item-profession">Старший юрист</span>
+                        <span class="team__item--icon team__item--icon-year">12 лет практики</span>
+                        <span class="team__item--icon team__item--icon-licenze">34 лицензии получено</span>
+                        <a href="#" class="btn btn-default">Получить консультацию</a>
+                    </div>
+                </div>
+            </div>
+            <div class="team__wrap-col">
+                <div class="team__item" style="background-image: url(../images/dist/team1.png);">
+                    <div class="team__item-body">
+                        <span class="team__item-name">Иван Васильевич</span>
+                        <span class="team__item-profession">Старший юрист</span>
+                        <span class="team__item--icon team__item--icon-year">12 лет практики</span>
+                        <span class="team__item--icon team__item--icon-licenze">34 лицензии получено</span>
+                        <a href="#" class="btn btn-default">Получить консультацию</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq">
+    <img class="faq__bg" src="/images/dist/faq.png" alt="" data-parallax='{"y": 400, "smoothness": 30}'>
+    <div class="container">
+        <h2 class="faq__title">Возможно, у Вас остались вопросы<br> ответы на которые есть ниже</h2>
+        <div class="faq__name wow animate__fadeInUp">
+            <div data-parallax='{"y": -150, "smoothness": 10}'>
+                <div class="name-block">
+                    <div class="name-block__wrap">
+                        <span class="name-block__name">Будовских<br> Александр<br> Викторович</span>
+                        <span class="name-block__descr">Ведущий специалист<br> “Альфа Экспертиза”</span>
+                    </div>
+                </div>
+                <div class="name-block">
+                    <div class="name-block__wrap">
+                        <span class="name-block__name">Константинопольский<br> Иван Иванович</span>
+                        <span class="name-block__descr">Эксперт “Альфа Экспертиза”</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq__wrap">
+            <div class="faq__item">
+                <div class="faq__item-title">Что необходимо для получения лицензии на отходы?</div>
+                <div class="faq__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rerum ex quia illum saepe quibusdam asperiores. Cumque ullam itaque optio in minima totam officiis quae iure, debitis repellendus, quibusdam sequi?</div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__item-title">Какие требования предъявляются к предприятиям для получения лицензии на отходы?</div>
+                <div class="faq__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rerum ex quia illum saepe quibusdam asperiores. Cumque ullam itaque optio in minima totam officiis quae iure, debitis repellendus, quibusdam sequi?</div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__item-title">Какие требования предъявляются к предприятиям для получения лицензии на отходы?</div>
+                <div class="faq__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rerum ex quia illum saepe quibusdam asperiores. Cumque ullam itaque optio in minima totam officiis quae iure, debitis repellendus, quibusdam sequi?</div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__item-title">Какие требования предъявляются к предприятиям для получения лицензии на отходы?</div>
+                <div class="faq__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rerum ex quia illum saepe quibusdam asperiores. Cumque ullam itaque optio in minima totam officiis quae iure, debitis repellendus, quibusdam sequi?</div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__item-title">Какие требования предъявляются к предприятиям для получения лицензии на отходы?</div>
+                <div class="faq__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rerum ex quia illum saepe quibusdam asperiores. Cumque ullam itaque optio in minima totam officiis quae iure, debitis repellendus, quibusdam sequi?</div>
+            </div>
+        </div>
+        <div class="faq-form">
+            <h3 class="faq-form__title">Не нашли ответ на Ваш вопрос?</h3>
+            <p class="faq-form__descr">Воспользуйтесь формой обратной связи</p>
+            <form>
+                <div class="faq-form__wrap">
+                    <div class="faq-form__wrap-col">
+                        <textarea placeholder="Опишите Вашу ситуацию"></textarea>
+                    </div>
+                    <div class="faq-form__wrap-col">
+                        <input type="text" class="phone-js" placeholder="Ваш телефон" required>
+                        <button class="btn btn-default">Получить консультацию</button>
+                        <p class="polit">Нажимая кнопку Вы соглашаетесь с политикой обработки персональных данных.</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="section contact">
+    <contact class="contact__wrap">
+        <h2 class="section__title">Контакты</h2>
+    </contact>
+    <div class="contact__map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa8ad3bc7df0b7f78a256a7d69a26fa89b7adf9395c032cce9b43113bc246a44d&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+    </div>
+</section>
+
+	<script src="/libs/old-script/scripts.min.js"></script>
+	<script src="/libs/wow/wow.js"></script>
+	<script src="../libs/parallax/jquery.easing.1.3.js"></script>
+	<script src="../libs/parallax/jquery.parallax-scroll.js"></script>
 	<script src="js/app.min.js"></script>
+	</body>
 
-</body>
-</html>
+	</html>
+

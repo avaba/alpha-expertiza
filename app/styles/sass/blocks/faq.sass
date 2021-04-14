@@ -43,6 +43,7 @@
             top: 0
             bottom: 0
     &__item
+        position: relative
         &-title
             font-size: 24px
             position: relative
@@ -50,6 +51,7 @@
             display: flex
             align-items: center
             cursor: pointer
+            z-index: 1
             &::before
                 content: ''
                 position: absolute
@@ -62,7 +64,7 @@
                 content: ''
                 width: 54px
                 height: 54px
-                background: url(/images/src/plus.svg)
+                background: url(/images/dist/plus.svg)
                 background-position: 50% 50%
                 background-repeat: no-repeat
                 border: 1px solid #dee2e9
@@ -81,6 +83,19 @@
         &:last-child &
             &-text
                 padding-bottom: 15px
+        &-num
+            position: absolute
+            bottom: 0
+            left: 0
+            font-weight: 900
+            font-size: 140px
+            height: 70px
+            line-height: 110px
+            overflow: hidden
+            color: #aab5c9
+            opacity: .15
+            span
+                display: inline-block
 
 .faq-form
     width: 57%

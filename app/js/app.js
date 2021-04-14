@@ -289,8 +289,13 @@ document.addEventListener('DOMContentLoaded', function () {
   wow.init()
 
   // graph tabs
-  $('.tabs__nav-item').eq(0).addClass('is-active')
-  $('.tabs__content').eq(0).addClass('is-active')
+
+  $('.tabs').each(function () {
+    $(this).find('.tabs__nav-item').eq(0).addClass('is-active')
+    $(this).find('.tabs__content').eq(0).addClass('is-active')
+  })
+
+  $('.contact__maps-item').eq(0).addClass('is-active')
 
   // line tabs
   let lineElem = $('.graph__nav-line')
@@ -313,15 +318,22 @@ document.addEventListener('DOMContentLoaded', function () {
   lineAnimate(0, lineElem)
 
   // tabs click
-  tabNav.on('click', function () {
-    const parent = $(this).closest('.tabs')
-    const index = parent.find(tabNav).index(this)
-    parent.find(tabNav).removeClass('is-active')
-    $(this).addClass('is-active')
-    parent.find('.tabs__content').removeClass('is-active')
-    parent.find('.tabs__content').eq(index).addClass('is-active')
-    lineAnimate(index, lineElem)
-  })
+  function tabClick(parentClass, find) {
+    tabNav.on('click', function () {
+      const parent = $(this).closest(parentClass)
+      const index = parent.find(tabNav).index(this)
+      parent.find(tabNav).removeClass('is-active')
+      $(this).addClass('is-active')
+      parent.find(find).removeClass('is-active')
+      parent.find(find).eq(index).addClass('is-active')
+      lineAnimate(index, lineElem)
+    })
+  }
+
+  tabClick('.tabs', '.tabs__content')
+  tabClick('.contact', '.contact__maps-item')
+
+  // tabs click map
 
   // benefit
 
@@ -372,5 +384,15 @@ document.addEventListener('DOMContentLoaded', function () {
       $(this).closest('.faq__wrap').find('.faq__item-text').slideUp()
       $(this).next().slideDown()
     }
+  })
+
+  $('.faq__item').each(function (e) {
+    let faqNum = e + 1
+    faqNum = String(faqNum).padStart(2, '0')
+    $(this)
+      .find('.faq__item-title')
+      .append(
+        `<span class="faq__item-num"><span class="wow animate__fadeInUp" data-wow-delay="0.2s">${faqNum}<span></span>`
+      )
   })
 })
