@@ -20,15 +20,9 @@
         &-descr
             font-size: 24px
             margin: 0
-    
-    &__wrap
-        display: flex
-        &-col
-            width: 20%
-            margin-right: 25px
-            &:last-child
-                margin-right: 0
-
+    .team-slider
+        .swiper-slide
+            width: 365px
     &__item
         background-size: cover
         background-position: center
@@ -80,3 +74,21 @@
             &-licenze
                 &::before
                     mask-image: url(/images/dist/licenze.svg)    
+
+@media only screen and (max-width: 1199.98px)
+    .team
+        padding-top: 350px
+
+@media only screen and (max-width: 991.98px)
+    .team-parallax
+        transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1) !important
+    .team__head-title
+        font-size: 30px
+        br
+            display: none
+    .team__head-descr
+        font-size: 18px
+
+@media only screen and (max-width: 575.98px)
+    .team__item
+        padding: 30px 15px 

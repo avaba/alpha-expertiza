@@ -1,19 +1,21 @@
 .comment
-    height: 100vh
+    height: 950px
     position: relative
     z-index: 2
     &__wrap
         margin-top: 200px
         display: flex
         align-items: flex-end
-        max-width: 1920px
-        margin-left: auto
-        margin-right: auto
+        position: relative
+        display: flex
+        justify-content: center
+        padding: 0
 
 .comment-thumb
-    position: relative
+    position: absolute
+    left: -365px
+    bottom: 0
     width: 380px
-    margin-left: 10px
     .swiper-slide
         width: 120px
         height: 150px
@@ -89,3 +91,58 @@
         padding: 70px
         background: #fff
         height: 550px
+
+@media only screen and (max-width: 1470px)
+    .comment-thumb
+        display: none
+    .comment-slider .swiper-slide .comment-slider__item
+        height: 100%
+
+@media only screen and (max-width: 1199.98px)
+    .comment__wrap
+        margin-top: 50px
+        transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1) !important
+    .comment-text
+        width: 592px
+
+@media only screen and (max-width: 991.98px)
+    .comment
+        height: auto
+    .comment-slider
+        width: 50%
+    .comment-text
+        width: 50%
+    .comment-text__item
+        padding: 30px
+        overflow: hidden
+        overflow-y: auto
+    .comment-slider .swiper-pagination
+        width: 135px!important
+
+@media only screen and (max-width: 767.98px)
+    .comment-slider .swiper-slide
+        height: 400px
+    .comment-slider .swiper-slide .comment-slider__item
+        padding: 0px 15px
+    .comment-slider .swiper-slide .comment-slider__item-name
+        font-size: 16px
+    .comment-slider__item-text
+        font-size: 14px
+    .comment-slider .swiper-fraction
+        left: 15px
+    .comment-slider .swiper-container-horizontal>.swiper-pagination-progressbar
+        width: auto !important
+        left: 70px!important
+        right: 115px
+    .comment-text__item
+        height: 400px
+
+@media only screen and (max-width: 575.98px)
+    .comment-slider
+        width: 100%
+    .comment__wrap
+        flex-wrap: wrap
+    .comment-text
+        width: 100%
+    .comment-text__item
+        height: 300px

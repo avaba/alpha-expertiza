@@ -67,11 +67,28 @@
             font-weight: 600
         &-descr
             font-size: 18px
-            
-
-
-    
-            
-
+        
 ymaps
     filter: grayscale(100%)
+
+@media only screen and (max-width: 991.98px)
+    .contact__wrap
+        position: relative
+        left: 0
+        transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1) !important
+        background: $second
+    .contact__wrap::before
+        display: none
+    .contact__tabs
+        width: 100%
+    .contact__maps
+        height: 400px
+
+@media only screen and (max-width: 575.98px)
+    .contact__wrap
+        padding: 30px 15px
+    .contact__nav-item
+        padding: 10px
+        width: 50%
+    .contact-item__body-title
+        font-size: 16px

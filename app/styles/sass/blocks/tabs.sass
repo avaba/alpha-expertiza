@@ -11,3 +11,15 @@
             z-index: 1
             opacity: 1
             transition: all .3s
+
+@media only screen and (max-width: 575.98px)
+    .tabs__nav
+        display: flex
+        width: 100%
+        justify-content: flex-start
+        overflow: hidden
+        overflow-x: auto
+    .graph__nav-line
+        display: none
+    .tabs__nav-item.is-active
+        border-color: $second

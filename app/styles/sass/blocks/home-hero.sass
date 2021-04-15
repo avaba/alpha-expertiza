@@ -5,12 +5,13 @@
     padding-bottom: 155px
     color: $white
     display: flex
-    align-items: center
+    align-items: flex-start
     position: relative
     max-width: 1920px
     margin: 0 auto
     &__bg
         position: absolute
+        width: 2000px
         top: 0
         bottom: 0px
         overflow: hidden
@@ -70,6 +71,7 @@
                 position: relative
                 z-index: 1
                 &.is-active
+                    z-index: 20 
                     svg path.shape-svg
                         fill: #262e3f
                 &:hover
@@ -103,6 +105,7 @@
                 &.show
                     opacity: 1
                     pointer-events: auto
+                    z-index: 10
     &__dir
         position: absolute
         left: 50%
@@ -112,5 +115,58 @@
         margin-left: 65px
 
                 
+@media only screen and (max-width: 1199.98px)
+    .home-hero
+        height: auto
+    .home-hero__bg img
+        height: 1225px   
 
+@media only screen and (max-width: 991.98px)
+    .home-hero
+        background: url(/images/dist/home.png)
+        background-size: cover
+        background-position: 50%
+        background-attachment: fixed
+        .name-block
+            margin-top: 150px
+            transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1) !important
+    .home-hero__bg
+        display: none
+    .home-hero__dir
+        left: auto
+        right: 0
+        height: 500px   
     
+@media only screen and (max-width: 768.98px)
+    .home-hero .advantages
+        flex-wrap: wrap
+    .home-hero .advantages__item
+        flex: 0 0 100%
+    .home-hero .advantages__item::before
+        display: none
+    .home-hero .advantages__info-text
+        left: auto
+        right: -10px
+        width: 300px
+    .home-hero .advantages__info-text::before
+        left: auto
+        transform: translateX(0%)
+        right: 10px
+    .home-hero .name-block
+        margin-left: 0
+    .home-hero__dir
+        height: 520px
+        right: -30px
+
+@media only screen and (max-width: 575.98px)
+    .home-hero
+        padding-bottom: 50px
+    .home-hero__dir
+        width: auto
+        height: 410px
+    .name-block__name
+        font-size: 20px !important
+    .name-block__descr
+        font-size: 16px !important
+    .home-hero .name-block
+        margin-top: 200px

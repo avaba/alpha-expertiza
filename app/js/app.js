@@ -276,6 +276,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   })
 
+  let teamSlider = new Swiper('.team-slider .swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    breakpoints: {
+      576: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true
+      }
+    }
+  })
+
   // animate wow
 
   const wow = new WOW({
@@ -318,7 +330,7 @@ document.addEventListener('DOMContentLoaded', function () {
   lineAnimate(0, lineElem)
 
   // tabs click
-  function tabClick(parentClass, find) {
+  function tabClick(parentClass, find, line) {
     tabNav.on('click', function () {
       const parent = $(this).closest(parentClass)
       const index = parent.find(tabNav).index(this)
@@ -326,11 +338,13 @@ document.addEventListener('DOMContentLoaded', function () {
       $(this).addClass('is-active')
       parent.find(find).removeClass('is-active')
       parent.find(find).eq(index).addClass('is-active')
-      lineAnimate(index, lineElem)
+      if (line === true) {
+        lineAnimate(index, lineElem)
+      }
     })
   }
 
-  tabClick('.tabs', '.tabs__content')
+  tabClick('.tabs', '.tabs__content', true)
   tabClick('.contact', '.contact__maps-item')
 
   // tabs click map

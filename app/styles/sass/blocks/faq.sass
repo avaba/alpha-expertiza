@@ -8,6 +8,7 @@
     &__bg
         position: absolute
         top: -400px
+        right: -420px
         bottom: 0
         max-width: none
         z-index: -1
@@ -147,3 +148,48 @@
         margin-bottom: 10px
     .btn
         margin-bottom: 10px
+
+@media only screen and (max-width: 1199.98px)
+    .faq__name
+        margin-left: 20px
+
+@media only screen and (max-width: 991.98px)
+    .faq
+        margin-bottom: 0
+        padding-bottom: 0
+    .faq__bg
+        display: none
+    .faq__title
+        font-size: 30px
+        br
+            display: none
+    .faq__wrap
+        margin-top: 0px
+        width: 100%
+        padding-right: 0
+    .faq__item-title::before
+        right: -100%
+    .faq .name-block
+        display: none
+    .faq-form
+        width: 100%
+        background: none
+    .faq-form::before
+        right: -100%
+        z-index: -1
+
+@media only screen and (max-width: 575.98px)
+    .faq__item-title
+        font-size: 16px
+        font-weight: bold
+    .faq__item-title::after
+        margin-left: 10px
+    .faq__item-text
+        font-size: 14px
+    .faq-form
+        padding-right: 0
+    .faq-form__wrap
+        flex-wrap: wrap
+    .faq-form__wrap-col
+        width: 100%
+        margin-right: 0
